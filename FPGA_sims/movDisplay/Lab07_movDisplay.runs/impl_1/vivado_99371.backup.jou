@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  2 18:30:03 2019
+# Process ID: 99371
+# Current directory: /home/jinson/vivado/Lab07_movDisplay/Lab07_movDisplay.runs/impl_1
+# Command line: vivado -log Lab07_movDisplay.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab07_movDisplay.tcl -notrace
+# Log file: /home/jinson/vivado/Lab07_movDisplay/Lab07_movDisplay.runs/impl_1/Lab07_movDisplay.vdi
+# Journal file: /home/jinson/vivado/Lab07_movDisplay/Lab07_movDisplay.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Lab07_movDisplay.tcl -notrace

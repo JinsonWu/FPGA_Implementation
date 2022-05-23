@@ -1,0 +1,216 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Jun 13 21:20:25 2019
+| Host         : loyuchen-Parallels-Virtual-Platform running 64-bit unknown
+| Command      : report_control_sets -verbose -file Final_Project_control_sets_placed.rpt
+| Design       : Final_Project
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   144 |
+| Unused register locations in slices containing registers |    65 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      2 |            1 |
+|      3 |            1 |
+|      8 |            1 |
+|      9 |            2 |
+|     10 |            1 |
+|     11 |            3 |
+|     15 |            1 |
+|    16+ |          132 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            3 |
+| No           | No                    | Yes                    |             289 |           75 |
+| No           | Yes                   | No                     |               8 |            2 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              54 |           15 |
+| Yes          | Yes                   | No                     |              11 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+--------------------------------------------------------------------------------------------------------+--------------------------------+------------------+----------------+
+|       Clock Signal      |                                              Enable Signal                                             |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++-------------------------+--------------------------------------------------------------------------------------------------------+--------------------------------+------------------+----------------+
+| ~counter_reg[1]_i_2_n_0 |                                                                                                        |                                |                1 |              1 |
+|  clk_IBUF_BUFG          |                                                                                                        |                                |                1 |              1 |
+| ~counter_reg[1]_i_2_n_0 |                                                                                                        | PWM1/c1/rst_n                  |                1 |              2 |
+|  counter_reg[1]_i_2_n_0 |                                                                                                        |                                |                1 |              3 |
+|  clk_IBUF_BUFG          |                                                                                                        | c1/clear                       |                2 |              8 |
+|  clk_IBUF_BUFG          | PWM1/c1/counter[8]_i_1_n_0                                                                             | PWM1/c1/rst_n                  |                2 |              9 |
+|  clk_48k_BUFG           |                                                                                                        | PWM1/c1/rst_n                  |                4 |              9 |
+| ~counter_reg[1]_i_2_n_0 | delay_module/data_reg[1][11]_i_1_n_0                                                                   | delay_module/rst_n             |                2 |             10 |
+| ~counter_reg[1]_i_2_n_0 | delay_module/data_reg[0][11]_i_1_n_0                                                                   | delay_module/rst_n             |                4 |             11 |
+|  clk_IBUF_BUFG          |                                                                                                        | PWM1/c1/rst_n                  |                3 |             11 |
+| ~counter_reg[1]_i_2_n_0 | rst_n_IBUF                                                                                             | delay_module/data[11]_i_1_n_0  |                7 |             11 |
+| ~counter_reg[1]_i_2_n_0 |                                                                                                        | delay_module/rst_n             |                5 |             15 |
+| ~counter_reg[1]_i_2_n_0 | delay_module/data_reg[2][11]_i_1_n_0                                                                   | delay_module/rst_n             |                7 |             24 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_26112_26367_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_19968_20223_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_8192_8447_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_15104_15359_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_22528_22783_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_22272_22527_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_22016_22271_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_2560_2815_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_21760_22015_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_14336_14591_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_20992_21247_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_23040_23295_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_20224_20479_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_8448_8703_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_27904_28159_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_12544_12799_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_10496_10751_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_9984_10239_0_0_i_1_n_0  |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_12032_12287_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_13568_13823_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_9216_9471_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_8960_9215_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_8704_8959_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_7680_7935_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_0_0_i_1_n_0       |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_10240_10495_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_1024_1279_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_10752_11007_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_27648_27903_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_11264_11519_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_12288_12543_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_1280_1535_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_15360_15615_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_28160_28415_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_13824_14079_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_14592_14847_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_28416_28671_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_17408_17663_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_30464_30719_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_17152_17407_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_25856_26111_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_11008_11263_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_2048_2303_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_21248_21503_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_23552_23807_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_0_0_i_1_n_0    |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_21504_21759_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_14848_15103_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_22784_23039_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_2304_2559_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_15872_16127_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_16128_16383_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_16896_17151_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_16640_16895_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_13312_13567_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_25088_25343_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_17664_17919_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_17920_18175_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_11520_11775_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_9728_9983_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_18176_18431_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_1792_2047_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_19200_19455_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_19456_19711_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_32256_32511_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_7168_7423_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_7424_7679_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_3072_3327_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_30720_30975_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_30976_31231_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_31232_31487_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_31488_31743_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_31744_31999_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_6912_7167_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_32000_32255_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_32512_32767_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_3328_3583_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_24832_25087_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_18432_18687_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_23296_23551_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_25600_25855_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_27136_27391_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_6656_6911_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_6400_6655_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_6144_6399_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_5888_6143_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_5632_5887_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_5376_5631_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_0_0_i_1_n_0     |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_5120_5375_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_4864_5119_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_4608_4863_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_4352_4607_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_4096_4351_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_3840_4095_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_3584_3839_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           |                                                                                                        | delay_module/rst_n             |               13 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_18944_19199_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_13056_13311_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_7936_8191_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_9472_9727_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_2816_3071_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_18688_18943_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_26624_26879_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_16384_16639_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_15616_15871_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_26368_26623_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_29952_30207_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_24320_24575_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_19712_19967_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_24576_24831_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_28672_28927_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_27392_27647_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_0_0_i_1_n_0     |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_25344_25599_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_29440_29695_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_29696_29951_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_29184_29439_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_28928_29183_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_20736_20991_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_30208_30463_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_12800_13055_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_11776_12031_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_23808_24063_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_1536_1791_0_0_i_1_n_0   |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_24064_24319_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_26880_27135_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_14080_14335_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           | delay_module/SRAM/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_20480_20735_0_0_i_1_n_0 |                                |               11 |             44 |
+|  clk_48k_BUFG           |                                                                                                        | FIR/data_reg[8][11]_i_1_n_0    |               26 |            104 |
+|  clk_48k_BUFG           |                                                                                                        | FIR/data_reg[0][11]_i_1__0_n_0 |               23 |            104 |
++-------------------------+--------------------------------------------------------------------------------------------------------+--------------------------------+------------------+----------------+
+
+

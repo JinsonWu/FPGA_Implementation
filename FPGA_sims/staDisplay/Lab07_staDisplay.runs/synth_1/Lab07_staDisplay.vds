@@ -1,0 +1,387 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 30 11:38:37 2019
+# Process ID: 22759
+# Current directory: /home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.runs/synth_1
+# Command line: vivado -log Lab07_staDisplay.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab07_staDisplay.tcl
+# Log file: /home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.runs/synth_1/Lab07_staDisplay.vds
+# Journal file: /home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at '/home/jinson/.Xilinx/Vivado/2018.3/XilinxTclStore'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source Lab07_staDisplay.tcl -notrace
+Command: synth_design -top Lab07_staDisplay -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22775 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1362.508 ; gain = 0.000 ; free physical = 941 ; free virtual = 1939
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Lab07_staDisplay' [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/sources_1/new/Lab07_staDisplay.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Lab07_staDisplay' (1#1) [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/sources_1/new/Lab07_staDisplay.sv:23]
+WARNING: [Synth 8-3917] design Lab07_staDisplay has port dp driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1386.934 ; gain = 24.426 ; free physical = 952 ; free virtual = 1952
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1386.934 ; gain = 24.426 ; free physical = 951 ; free virtual = 1951
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1386.934 ; gain = 24.426 ; free physical = 951 ; free virtual = 1951
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc]
+WARNING: [Vivado 12-584] No ports matched 'an0'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an1'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an2'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an3'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an4'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an5'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an6'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an7'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ca'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cb'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cc'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cd'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ce'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cf'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cg'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an0'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an1'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an2'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an3'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an4'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an5'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an6'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an7'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ca'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cb'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cc'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cd'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ce'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cf'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cg'. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.srcs/constrs_1/new/Lab05_staDislay.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Lab07_staDisplay_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Lab07_staDisplay_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1681.801 ; gain = 0.000 ; free physical = 666 ; free virtual = 1696
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1681.801 ; gain = 0.000 ; free physical = 666 ; free virtual = 1696
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1681.801 ; gain = 0.000 ; free physical = 666 ; free virtual = 1696
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1681.801 ; gain = 0.000 ; free physical = 666 ; free virtual = 1696
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1681.801 ; gain = 319.293 ; free physical = 734 ; free virtual = 1764
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1681.801 ; gain = 319.293 ; free physical = 734 ; free virtual = 1764
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1681.801 ; gain = 319.293 ; free physical = 736 ; free virtual = 1766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "date" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "an" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1681.801 ; gain = 319.293 ; free physical = 726 ; free virtual = 1757
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Lab07_staDisplay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design Lab07_staDisplay has port dp driven by constant 1
+INFO: [Synth 8-3886] merging instance 'date_reg[0]' (FD) to 'date_reg[3]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1681.801 ; gain = 319.293 ; free physical = 714 ; free virtual = 1748
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1690.801 ; gain = 328.293 ; free physical = 584 ; free virtual = 1624
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1690.801 ; gain = 328.293 ; free physical = 584 ; free virtual = 1624
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1700.816 ; gain = 338.309 ; free physical = 583 ; free virtual = 1623
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1700.816 ; gain = 338.309 ; free physical = 583 ; free virtual = 1623
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1700.816 ; gain = 338.309 ; free physical = 583 ; free virtual = 1623
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1700.816 ; gain = 338.309 ; free physical = 583 ; free virtual = 1623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1700.816 ; gain = 338.309 ; free physical = 583 ; free virtual = 1623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1700.816 ; gain = 338.309 ; free physical = 583 ; free virtual = 1623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1700.816 ; gain = 338.309 ; free physical = 583 ; free virtual = 1623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     2|
+|4     |LUT2   |     1|
+|5     |LUT3   |    15|
+|6     |FDRE   |    31|
+|7     |IBUF   |     1|
+|8     |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    71|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1700.816 ; gain = 338.309 ; free physical = 583 ; free virtual = 1623
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1700.816 ; gain = 43.441 ; free physical = 638 ; free virtual = 1678
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1700.824 ; gain = 338.309 ; free physical = 638 ; free virtual = 1678
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1707.816 ; gain = 0.000 ; free physical = 578 ; free virtual = 1619
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 32 Warnings, 30 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1707.816 ; gain = 345.383 ; free physical = 635 ; free virtual = 1675
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1707.816 ; gain = 0.000 ; free physical = 635 ; free virtual = 1675
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/jinson/vivado/Lab07_staDisplay/Lab07_staDisplay.runs/synth_1/Lab07_staDisplay.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Lab07_staDisplay_utilization_synth.rpt -pb Lab07_staDisplay_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 30 11:38:59 2019...
