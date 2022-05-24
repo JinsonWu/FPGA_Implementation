@@ -11,7 +11,7 @@ We attempted to devise a self-made music mixer based on Xilinx Nexys 4 board (no
 ### Analog Amplifier
 Our analog amplifier is referred to a classic model, BOSS DS1. 
 
-<img src="./Final_Project_Music_Mixer/BOSS_DS1.jpg" width="900" height="300">
+<img src="./Final_Project_Music_Mixer/BOSS_DS1.jpg" width="900" height="250">
 
 
 ### ADDA
