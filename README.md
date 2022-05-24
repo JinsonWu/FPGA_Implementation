@@ -9,21 +9,21 @@ We attempted to devise a self-made music mixer based on Xilinx Nexys 4 board (no
 *This is a small trailer of our music mixer: https://www.youtube.com/watch?v=UJXtSgm3TtA*
 
 ### Analog Amplifier
-Our analog amplifier is referred to a classic model, BOSS DS1. 
+Our analog amplifier is referred to a classic model, BOSS DS1. Input signal has preliminary filtering and amplified here. The clean signal then transmits to FPGA board through ADDA IP provided by the board. 
 
 <img src="./Final_Project_Music_Mixer/BOSS_DS1.jpg" width="900" height="250">
 
 
-### ADDA
-
+### ADDA Transform
+We did ADDA transform twice in this project. The first one utilized fast fourier transform (FFT) based on discrete fourier transform (DFT) to produce desired signal. The sampling bit was set to be 12. The other one cascading after the FPGA board applied pulse-width modulation (PWM) to output digital signal. We split a cycle into 512 (9-bit) and configured the values. However, we realized the intrinsic ADDA IP had some problems that drew a negative impact on the signal. Thus, following signal filtering was required after each ADDA transform.
 
 
 ### Signal Filtering and Voice Effect
-
+Digital signal filtering and voice effect production were performed on the Xilinx FPGA board. It should fetch the sound in the interval of frequency that audible by human ears. Subsequently, we designed a finite impulse response (FIR) according to the parameters acquired by matlab, succeeded by voice effects. There were echos, volume increase or decrease, and some metal-like effects. 
 
 
 ### Class-D Amplifier
-
+This class-D amplifier was to better present the signal after PWM since singal passed through FPGA ports would be "corrupted". It was necessary to concatenate a filtering amplifier at the final stage.
 
 
 ## Contact Info
